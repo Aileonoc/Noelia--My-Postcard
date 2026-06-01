@@ -1,0 +1,100 @@
+/* Estilos Generales y Fondo */
+body {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* Aquí aplicamos la nueva fuente exacta */
+    font-family: 'Handlee', cursive; 
+}
+
+/* Contenedor Principal de la Postal */
+.postcard {
+    background-color: #ffffff;
+    width: 450px;
+    padding: 30px;
+}
+
+/* Header */
+.postcard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.postcard-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+/* Cuerpo (Columnas de Texto e Inputs) */
+.postcard-body {
+    display: flex;
+    gap: 30px; 
+    margin-bottom: 20px;
+}
+
+/* Columna Izquierda (Párrafos) */
+.left-column {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+.left-column p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Columna Derecha (Inputs) */
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px; 
+}
+
+.right-column input {
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 5px 0;
+    font-family: inherit; 
+    font-size: 1rem;
+    color: #555;
+    background-color: transparent;
+}
+
+.right-column input:focus {
+    outline: none;
+    border-bottom: 2px solid #555;
+}
+
+/* Footer  */
+.postcard-footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.postcard-footer button {
+    background-color: #cccccc;
+    border: 1px solid #999;
+    padding: 5px 10px;
+    font-family: inherit; /* Hereda la fuente de la postal */
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #000;
+}
+
+.postcard-footer button:hover {
+    background-color: #bbbbbb;
+}
